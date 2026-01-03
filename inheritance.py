@@ -1,19 +1,22 @@
-class Parent_class:
-    def __init__(self,name,age):
-       self.name = name
-       self.age = age 
-    def description(self):
-        print(f"Name: {self.name}, Age: {self.age}")
+class Vehicle:
+    def __init__(self, name):
+        self.name = name
+        self.is_running = True
 
-class Student(Parent_class):
-    def __init__(self,name, age, deg):
-        self.deg = deg
-        super().__init__(name, age)
-    def student_des(self):
-        print(f"Name: {self.name}, Age:{self.age}, Deg: {self.deg}")
-    
+class Car(Vehicle):
+    def __init__(self, name, color):
+        super().__init__(name)   
+        self.color = color
 
-rohim = Student('Rohim', 20, "BSc" )
-rohim.description()
-rohim.student_des()
-        
+class Bike(Vehicle):
+    def door(self):
+        print("Bike have no door")
+
+BMW = Car("BMW", "black")
+
+print(BMW.name)
+print(BMW.is_running)
+print(BMW.color)
+
+honda =Bike("honda")
+honda.door()
