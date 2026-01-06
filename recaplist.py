@@ -55,5 +55,8 @@
 
 # print(dublicated)
 
-
+def my_decorator(func):
+    def wrapper():
+        return func()
+    return wrapper
 
