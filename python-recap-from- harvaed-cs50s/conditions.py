@@ -6,4 +6,4 @@ if n > 0:
 elif n < 0:
     print(f"{n} is Nagetive")
 else:
-    print(f"{n} is zero")
+    print(f"{n} is equal to zero")
